@@ -10,7 +10,7 @@ jobs:
           os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
       - run: mkdir test-files-out
       - uses: ./
         id: convert-dir
